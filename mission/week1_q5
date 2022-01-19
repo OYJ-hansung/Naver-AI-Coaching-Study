@@ -1,0 +1,15 @@
+inputs = "cat32dog16cow5"
+answer = list()
+
+def find_string(inputs):
+    for idx in inputs:
+        if idx.isdigit() == True:
+            answer.append(' ')
+            continue
+        else:
+            answer.append(idx)
+    print(answer)
+    return ''.join(answer).split()
+
+string_list = find_string(inputs)
+print(string_list)
